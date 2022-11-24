@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Qualisys_v1.0.exe" version="1.0.0.0" publicKeyToken="c914d12f14134642" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="logo — kopia.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Qualisys_v1.0" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Qualisys_v1.0.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Qualisys_v1.0.exe" size="129432">
+      <assemblyIdentity name="Qualisys_v1.0" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>aUYp/ns8KH8eto7/U57CfuRHOY3zR9laAKJDtea9qQY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RTClientSDK.dll" size="54784">
+      <assemblyIdentity name="RTClientSDK" version="1.15.7142.27865" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4tsegdDtd+RQPGswVKl0MFcmPZwVR4Ecnd0mHJ2P2KQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="logo — kopia.ico" size="16958">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BIgkFs7RO1dxDPUDAbiPr34zvIm1clLaIKYfw+9k17g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Qualisys_v1.0.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=MSI\adamm" issuerKeyHash="febffc5e36de6b80992b11d5abd68b5a964e9048" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>m/a3OQJ0+6dEi+gFEx3s/dQW1zRXyGCS1EY3s3kXcN4=</DigestValue></Reference></SignedInfo><SignatureValue>Ynn+8XfP2gFWv31lYVeq42dzPvmcX4VMlIpzw/dDwE7CHWhwjJf33Fmo14yCQfG9qTsIyGQIPQB29xOOlIFmeRN+U1BMfEJZbeLFW0gfHHR0gIWvk56affvEjGmM0GIDT+fsv9Z2NP8p0aSlFA5RcfiDtT1e39p6fT058YHkpHo=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uLj71U0CF6fh4vUaTIJF/PTSdW6O8F9aoI7inJ9yJEu9NELEiRWSV5k4dZBzROKgCE/nLbrgGFOfqIdRSDDpoHvjmNHlhBn1rdB5yicKwgbK3j2tvVbfVQoQxHeti9YPmvxcKuejgX4XFZvpZgsJRIeg1vjEWUGykTeACXDD8e0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="de701779b33746d49260c85734d716d4fdec1d1305e88b44a7fb740239b7f69b" Description="" Url=""><as:assemblyIdentity name="Qualisys_v1.0.exe" version="1.0.0.0" publicKeyToken="c914d12f14134642" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MSI\adamm</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>llZsLJWPB7PoGpaI9S6SCpp1rQZXNozG9IAxwSSiY3U=</DigestValue></Reference></SignedInfo><SignatureValue>LtQDsGLKOvvKeyClgMVrzZn0CUHOnfL3CoLZo49lnusT/jfRZ63eyg4mNXmMrC5mCQ1fJBCV4DzIfbJwHnCv7KB9AC2Iy8ackiL0SYbEBF1jCpiagsj295kfrZTzBM8y4SETDdo/Y4Ak9xZMe5lxcpePK/7EWCcQwrSIJjjs85o=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uLj71U0CF6fh4vUaTIJF/PTSdW6O8F9aoI7inJ9yJEu9NELEiRWSV5k4dZBzROKgCE/nLbrgGFOfqIdRSDDpoHvjmNHlhBn1rdB5yicKwgbK3j2tvVbfVQoQxHeti9YPmvxcKuejgX4XFZvpZgsJRIeg1vjEWUGykTeACXDD8e0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBvTCCASagAwIBAgIQEiBH6pakwaVN9hIWb606ozANBgkqhkiG9w0BAQsFADAdMRswGQYDVQQDHhIATQBTAEkAXABhAGQAYQBtAG0wHhcNMjIwODAyMjEwODA0WhcNMjMwODAzMDMwODA0WjAdMRswGQYDVQQDHhIATQBTAEkAXABhAGQAYQBtAG0wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALi4+9VNAhen4eL1GkyCRfz00nVujvBfWqCO4pyfciRLvTRCxIkVkleZOHWQc0TioAhP5y264BhTn6iHUUgw6aB745jR5YQZ9a3QeconCsIGyt49rb1W31UKEMR3rYvWD5r8XCrno4F+FxWb6WYLCUSHoNb4xFlBspE3gAlww/HtAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAsS/trigv1iAcLgSZrFALi6RotxoCUnWRt8qV9Spf6BSQqX1zP0sTv4SrNIcN4ZPwHiJV1dZmc6yN4CoAUZa7oVjtQkKNMt1QS/cyfds9BARnGXaEJ+/lGdwzSQXGjeVhFOHGgyr8AnftKi0etFPKwK6Q0BP/gD01/QRSLBwAumc=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
